@@ -7,16 +7,21 @@
     <link href="styles.css" rel="stylesheet">
     
 </head>
-<body onresize="windowCheck()">
+<body onresize="windowCheck()"> <!--checks if the window has been resized-->
+    <!--header-->
     <header>
         <img src="images/logo.png">
     </header>
+    <!--heading-->
     <div class="head">
         <h1>Popular Tech Items</h1>
         <p>Showing 8 items</p>
     </div>
+    <!--main content with product grid-->
     <main class="grid">
+        <!--goes back to previous item in carousel mode-->
         <input onclick='previous()' type='button' value="<"></input>
+
         <section class="product-container">
             <figure>
                 <a href="https://www.apple.com/iphone-15/">
@@ -104,8 +109,11 @@
             <p>$199.99</p>
             <p>Doorbell that can record video and works also as a speaker</p>
         </section>
+
+        <!--goes to next item in carousel mode-->
         <input onclick='next()' type='button' value=">"></input>
     </main>
+    <!--footer-->
     <footer>
         <ul>
             <li>Contact</li>
@@ -124,5 +132,6 @@
         <img src="images/logo2.png">
     </footer>
 </body>
+<!--elements load before script runs-->
 <script src="script.js"></script>
 </html>
