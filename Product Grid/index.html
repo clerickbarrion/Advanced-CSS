@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    
+</head>
+<body onresize="windowCheck()">
+    <header>
+        <img src="images/logo.png">
+    </header>
+    <div class="head">
+        <h1>Popular Tech Items</h1>
+        <p>Showing 8 items</p>
+    </div>
+    <main class="grid">
+        <input onclick='previous()' type='button' value="<"></input>
+        <section class="product-container">
+            <figure>
+                <a href="https://www.apple.com/iphone-15/">
+                    <img src="images/iphone15.png">
+                </a>
+                <figcaption>iPhone15</figcaption>
+            </figure>
+            <p>$799</p>
+            <p>The latest iPhone made by Apple</p>
+        </section>
+        
+        <section class="product-container">
+            <figure>
+                <a href="https://direct.playstation.com/en-us/buy-consoles/playstation5-console">
+                    <img src="images/ps5.png">
+                </a>
+                <figcaption>PS5</figcaption>
+            </figure>
+            <p>$499.99</p>
+            <p>The latest gaming console made by Sony</p>
+        </section>
+
+        <section class="product-container">
+            <figure>
+                <a href="https://www.dell.com/en-us/shop/microsoft-xbox-series-x-game-console-8k-hdr-1-tb-ssd/apd/ab365503/gaming-gaming-accessories">
+                    <img src="images/xboxx.png">
+                </a>
+                <figcaption>Xbox Series X</figcaption>
+            </figure>
+            <p>$449.99</p>
+            <p>The latest gaming console made by Microsoft</p>
+        </section>
+
+        <section class="product-container">
+            <figure>
+                <a href="https://www.apple.com/shop/buy-watch/apple-watch-ultra">
+                    <img width='238.76' height='221.84' src="images/applewatch.png">
+                </a>
+                <figcaption>Apple Watch Ultra 2</figcaption>
+            </figure>
+            <p>$799</p>
+            <p>Smartwatch that can monitor fitness</p>
+        </section>
+
+        <section class="product-container">
+            <figure>
+                <a href="https://www.amazon.com/dp/B0B96H7LGX?linkCode=ogi&tag=bp_links-20&ascsubtag=%5Bartid%7C2089.g.864%5Bsrc%7Cwww.google.com%5Bch%7C%5Blt%7C%5Bpid%7Cb8e5f301-81df-453e-9cef-230701d84b5f%5Bofsxid%7Cbutton_poc%5Bofsvid%7Clt_t%5Bofsxid%7Cshow_header_search%5Bofsvid%7Cshow_search&th=1">
+                    <img width='215.6' height='215.6' src="images/gopro.png">
+                </a>
+                <figcaption>GoPro HERO11</figcaption>
+            </figure>
+            <p>$349</p>
+            <p>Waterproof high-quality camera ment to capture athletic stunts</p>
+        </section>
+
+        <section class="product-container">
+            <figure>
+                <a href="https://www.lowes.com/pd/Frigidaire-25-6-cu-ft-Side-by-Side-Refrigerator-with-Ice-Maker-Easycare-Stainless-Steel-ENERGY-STAR/5013537917?cm_mmc=shp-_-c-_-prd-_-app-_-ggl-_-PMAX_APP_118_Refrigerators_Priority-Items-_-5013537917-_-local-_-0-_-0&gclid=CjwKCAjw9-6oBhBaEiwAHv1QvBYmO5aTiJWrJvxAI-cK1jcABbc9yzGXnLDxEk8U3FtcCN2ueMj6OxoCOu4QAvD_BwE&gclsrc=aw.ds">
+                    <img width='120.68' height='225' src="images/fridge.png">
+                </a>
+                <figcaption>Frigidaire Fridge</figcaption>
+            </figure>
+            <p>$1,049</p>
+            <p>Fridge that can dispense water/ice and regulate temperature</p>
+        </section>
+
+        <section class="product-container">
+            <figure>
+                <a href="https://www.amazon.com/Nintendo-Switch-Neon-Blue-Red-Joy%E2%80%91/dp/B081XLG3JJ">
+                    <img width='243' height='135.9' src="images/switch.png">
+                </a>
+                <figcaption>Nintendo Switch</figcaption>
+            </figure>
+            <p>$273.99</p>
+            <p>Handheld gaming device that can be projected to other bigger devices</p>
+        </section>
+
+        <section  id ='test' class="product-container">
+            <figure>
+                <a href="https://www.amazon.com/Ring-Video-Doorbell-3/dp/B0849J7W5X">
+                    <img src="images/ring.png">
+                </a>
+                <figcaption>Ring</figcaption>
+            </figure>
+            <p>$199.99</p>
+            <p>Doorbell that can record video and works also as a speaker</p>
+        </section>
+        <input onclick='next()' type='button' value=">"></input>
+    </main>
+    <footer>
+        <ul>
+            <li>Contact</li>
+            <li>1-800-BUZZMA</li>
+            <li>contact@buzzmarket.net</li>
+        </ul>
+        <ul>
+            <li>Visit</li>
+            <li>4500 Buzz Market Street</li>
+            <li>Charlotte, NC 28212</li>
+        </ul>
+        <ul>
+            <li>Rate</li>
+            <li>sitereview.com/buzzmarket</li>
+        </ul>
+        <img src="images/logo2.png">
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

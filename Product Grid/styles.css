@@ -1,0 +1,120 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(images/background.webp);
+}
+body {
+    color:white;
+    background-color: rgb(0,80,107);
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1024px;
+    margin:auto;
+    box-shadow: rgb(51, 51, 51) 5px 0px 15px, rgb(51, 51, 51) -5px 0px 15px;
+}
+header {
+    background-image: url(images/rain.png);
+    display:flex;
+    justify-content: center;
+    flex-basis:125px;
+}
+
+.head {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.head > * {
+    margin: 10px;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));;
+    grid-template-rows: repeat(2,auto);
+    width:100%;
+    height:100%;
+    margin: auto;
+}
+input {
+    display:none;
+    width: 15%;
+    font-size: 3rem;
+    text-align: center;
+    background-image: url(images/rain.png);
+    border: none;
+    cursor: pointer;
+}
+.product-container {
+    text-align: center;
+    background-color: #1167b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    border: 3px dashed black;
+}
+
+figure{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: lightblue;
+    background-image: url(images/rain.png);
+    width: 100%;
+    height: 100%;
+}
+
+figcaption {
+    color: rgb(0,80,107);
+    font-weight: bolder;
+}
+
+figcaption, p {
+    font-size: 100%;
+}
+
+footer {
+    width:100%;
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+    color: rgb(0,80,107);
+    display:flex;
+}
+li:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 531px) {
+    .grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .head {
+        justify-content: center;;
+    }
+    .head p {
+        display:none;
+    }
+    header img {
+        width:100%;
+    }
+    input {
+        display:block
+    }
+}

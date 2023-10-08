@@ -1,0 +1,34 @@
+.grid {
+    display:grid;
+    grid-template-columns: repeat(5,10rem);
+    grid-template-rows: repeat(13,2rem);
+    width:100%;
+    height:100%;
+}
+
+figure {
+    grid-column: 1/3;
+    grid-row: 1/8;
+    margin: 0;
+}
+
+img {
+    width:100%;
+    height:100%;
+    margin: 0;
+}
+.short-red-stripe{
+    background: red;
+    grid-column: 3/6;
+}
+.long-red-stripe {
+    background-color: red;
+    grid-column: 1/6;
+}
+.short-white-stripe {
+    grid-column: 3/6;
+}
+
+.long-white-stripe {
+    grid-column: 1/6;
+}
